@@ -1,13 +1,15 @@
 import React from "react";
 
-function ListItems() {
+function ListItems({ taskList, deleteItem }) {
   return (
-    <ul>
-      <li>
-        Task 1
-        <input type="checkbox" />
-        <button>Delete</button>
-      </li>
+    <ul className="task-list">
+      {taskList.map((task) => (
+        <li key={task.id}>
+          {task.text}
+          <input type="checkbox" />
+          <button onClick={() => deleteItem(task.id)}>Delete</button>
+        </li>
+      ))}
     </ul>
   );
 }

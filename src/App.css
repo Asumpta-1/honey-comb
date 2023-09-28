@@ -1,38 +1,59 @@
-.App {
+/* .App {
   text-align: center;
+} */
+.todo-list {
+  text-align: center;
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.task-input {
+  margin-bottom: 10px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.task-input input {
+  width: 70%;
+  padding: 5px;
+  border: 1px solid #ddd;
+  border-radius: 3px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.task-input button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.task-list {
+  list-style: none;
+  padding: 0;
+}
+
+.task-list li {
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding: 10px;
+  border: 1px solid #ddd;
+  margin: 5px 0;
+  border-radius: 3px;
 }
 
-.App-link {
-  color: #61dafb;
+.task-list input[type="checkbox"] {
+  margin-right: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.task-list button {
+  background-color: #ff4444;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  padding: 3px 5px;
+  cursor: pointer;
 }
